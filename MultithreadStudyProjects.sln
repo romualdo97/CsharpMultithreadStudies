@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002CreateThread", "002Creat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003Tasks", "003Tasks\003Tasks.csproj", "{8932F290-E678-4FAE-A126-C8EADABB1358}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAndAwait", "AsyncAndAwait\AsyncAndAwait.csproj", "{6BCC4C0A-95E4-4EF5-8607-16D11DF8D4C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8932F290-E678-4FAE-A126-C8EADABB1358}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8932F290-E678-4FAE-A126-C8EADABB1358}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8932F290-E678-4FAE-A126-C8EADABB1358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BCC4C0A-95E4-4EF5-8607-16D11DF8D4C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BCC4C0A-95E4-4EF5-8607-16D11DF8D4C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BCC4C0A-95E4-4EF5-8607-16D11DF8D4C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BCC4C0A-95E4-4EF5-8607-16D11DF8D4C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
