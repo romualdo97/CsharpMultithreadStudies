@@ -9,9 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002CreateThread", "002Creat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003Tasks", "003Tasks\003Tasks.csproj", "{8932F290-E678-4FAE-A126-C8EADABB1358}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncAndAwait", "AsyncAndAwait\AsyncAndAwait.csproj", "{6BCC4C0A-95E4-4EF5-8607-16D11DF8D4C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "004AsyncAndAwait", "AsyncAndAwait\004AsyncAndAwait.csproj", "{6BCC4C0A-95E4-4EF5-8607-16D11DF8D4C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Synchronization", "Synchronization\Synchronization.csproj", "{5471ABB6-26F3-4631-9036-56209F54FAF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "005Synchronization", "Synchronization\005Synchronization.csproj", "{5471ABB6-26F3-4631-9036-56209F54FAF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "006SignalingConstructs", "SignalingConstructs\006SignalingConstructs.csproj", "{D1963B01-666F-4D27-BC65-C64C0C24F03D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{5471ABB6-26F3-4631-9036-56209F54FAF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5471ABB6-26F3-4631-9036-56209F54FAF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5471ABB6-26F3-4631-9036-56209F54FAF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1963B01-666F-4D27-BC65-C64C0C24F03D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1963B01-666F-4D27-BC65-C64C0C24F03D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1963B01-666F-4D27-BC65-C64C0C24F03D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1963B01-666F-4D27-BC65-C64C0C24F03D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
