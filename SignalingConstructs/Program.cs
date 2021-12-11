@@ -6,7 +6,7 @@ namespace SignalingConstructs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            AutoResetAndManuallyResetSlim.Start();
         }
     }
 }
