@@ -1,6 +1,7 @@
 ﻿// #define EX01 // Monitor enter and monitor exit without taking care of exceptions
 // #define EX02 // Monitor enter and monitor exit taking care of exceptions
-#define EX03 // Implementing something similar to lock keyword but with timeout capabilities
+// #define EX03 // Implementing something similar to lock keyword but with timeout capabilities
+#define EX04 // Using ReaderWriterLockSlim so we allow parallel reads and synchronized writes
 
 using System;
 using System.Threading;
@@ -13,7 +14,21 @@ namespace Synchronization
     public class BankCard
     {
         private decimal m_moneyAmount;
+        private decimal m_credit;
         private readonly object m_sync = new object();
+        private ReaderWriterLockSlim m_rwLock = new ReaderWriterLockSlim();
+
+        public decimal TotalMoneyAmount
+        {
+            get
+            {
+                m_rwLock.EnterReadLock();
+                var result = m_moneyAmount + m_credit;
+                m_rwLock.ExitReadLock();
+
+                return result;                
+            }
+        }
 
         public BankCard(decimal moneyAmount)
         {
@@ -49,8 +64,14 @@ namespace Synchronization
             lock (m_sync)
             {
                 m_moneyAmount += amount;
-
             }
+#endif
+
+#if EX04
+            // Note you should never use this without try finally blocks... leaving this way for simplicity sake
+            m_rwLock.EnterWriteLock();
+            m_moneyAmount += amount;
+            m_rwLock.ExitWriteLock();
 #endif
         }
 
@@ -84,10 +105,18 @@ namespace Synchronization
 #if EX03
             using (m_sync.LockTimeout(TimeSpan.FromSeconds(3)))
             {
-                // Thread.Sleep(5000); // Generate a timeout exception
+                // Thread.Sleep(5000); // Generate a timeout exception on other threads waitting to acquire this lock
                 m_moneyAmount -= amount;
                 recipient.m_moneyAmount += amount;
             }
+#endif
+
+#if EX04
+            // Note you should never use this without try finally blocks... leaving this way for simplicity sake
+            m_rwLock.EnterWriteLock();
+            m_moneyAmount -= amount;
+            recipient.m_moneyAmount += amount;
+            m_rwLock.ExitWriteLock();
 #endif
         }
 

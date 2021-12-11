@@ -8,7 +8,9 @@ namespace Synchronization
         static void Main(string[] args)
         {
             // InterlockExamples.Start();
-            MonitorExamples.Start();
+            // MonitorExamples.Start();
+            // SemaphoreExample.Start();
+            DeadLockExample.Start();
             Console.ReadLine();
         }
     }
