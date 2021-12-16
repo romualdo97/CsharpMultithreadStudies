@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "005Synchronization", "Synch
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "006SignalingConstructs", "SignalingConstructs\006SignalingConstructs.csproj", "{D1963B01-666F-4D27-BC65-C64C0C24F03D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "007Spinning", "Spinning\007Spinning.csproj", "{90C5A872-6BC8-4022-A759-6E662AC574AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "007Spinning", "Spinning\007Spinning.csproj", "{90C5A872-6BC8-4022-A759-6E662AC574AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "008ConcurrentCollections", "008ConcurrentCollections\008ConcurrentCollections.csproj", "{C640646A-9E6B-4A97-990F-26CB24C0E3EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{90C5A872-6BC8-4022-A759-6E662AC574AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90C5A872-6BC8-4022-A759-6E662AC574AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90C5A872-6BC8-4022-A759-6E662AC574AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C640646A-9E6B-4A97-990F-26CB24C0E3EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C640646A-9E6B-4A97-990F-26CB24C0E3EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C640646A-9E6B-4A97-990F-26CB24C0E3EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C640646A-9E6B-4A97-990F-26CB24C0E3EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
